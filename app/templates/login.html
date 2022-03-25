@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<form action="/autenticar">
+
+    <div class="login2">
+    <div class="wrapper">
+        <div class="login">
+          <div class="login-form">      
+            <h1 class="login-title">DIGIF</h1>
+            <div class="form-wrapper">
+              <div class="input-wrapper">
+                <form>
+                  <label class="label" for="usuario">Usuário</label>
+                  <input class="input" type="text" id="email" name="email">
+                </div>
+                <div class="input-wrapper">
+                   <label class="label" for="password">Senha</label>
+                  <input class="input" type="password" id="password" name="password">
+                </div>
+                <div class="action-help">
+                </div>
+                <div class="actions">
+                  <button class="action" href="#">Login</button>
+                 
+                </form>
+              </div>
+
+            </div>
+          </div>
+          <div class="login-decoration">
+            
+          </div>
+        </div>
+      </div>
+      </div>
+  
+</form>
+
+
+{% endblock%}

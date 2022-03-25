@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<form method="post" action="/cadastrar receitas">
+
+    <div class="cadastro_de_receitas">
+        <div class="wrapper">
+            <div class="login">
+              <div class="login-form">      
+                <h1 class="login-title">DIGIF</h1>
+                <div class="form-wrapper">
+                  <div class="input-wrapper">
+                    <label>Valor:</label>
+            <input type="number" name="valor"><br/>
+            <label>Descrição:</label>
+            <input type="text" name="descricao"><br/>
+            <label>Data:</label>
+            <input type="date" name="data"><br/>
+            <button type="submit">Cadastrar Receitas</button>
+                  </div>
+        
+                </div>
+              </div>
+              <div class="login-decoration">
+                
+              </div>
+            </div>
+          </div>
+</div>
+</form>
+
+
+{% endblock%}
+

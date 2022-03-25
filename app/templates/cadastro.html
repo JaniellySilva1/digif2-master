@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<form method="post" action="/cadastrar">
+
+    <div class="cadastro">
+        <div class="wrapper">
+            <div class="login">
+              <div class="login-form">      
+                <h1 class="login-title">DIGIF</h1>
+                <div class="form-wrapper">
+                  <div class="input-wrapper">
+                    <form>
+                    <label class="label" for="email">Email:</label>
+                    <input class="input" type="text"  id="email" name="email"><br/>
+                    </div>
+                    <div class="input-wrapper">
+                    <label class="label" for="nome" >Nome:</label>
+                    <input class="input" type="text"  id="nome" name="nome"><br/>
+                    </div>
+                    <div class="input-wrapper">
+                      <label class="label" for="senha" >Senha:</label>
+                      <input class="input" type="password"  id="password" name="senha"><br/>
+                      </div>
+            <div class="action-help"></div>
+            <div class="actions">
+            <button class="action"  href="#" type="submit">Cadastrar</button>
+                  </div>
+                </div>
+              </div>
+              <div class="login-decoration">
+                
+              </div>
+            </div>
+          </div>
+</div>
+</form>
+
+{% endblock%}
+

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<form method="post" action="/cadastrar despesas">
+
+  <div class="cadastro_de_despesas">
+    <div class="wrapper">
+        <div class="login">
+          <div class="login-form">      
+            <h1 class="login-title">DIGIF</h1>
+            <div class="form-wrapper">
+              <div class="input-wrapper">
+                <form>
+                <label class="label" for="valor">Valor:</label>
+                <input class="input" type="number"  id="valor" name="valor"><br/>
+                </div>
+                <div class="input-wrapper">
+                <label class="label" for="descricao">Descrição:</label>
+                <input class="input" type="text"  id="descricao" name="descricao"><br/>
+                </div>
+                <div class="input-wrapper">
+                  <label class="label" for="data">Data:</label>
+                  <input class="input" type="date"  id="data" name="data"><br/>
+                  </div>
+        <div class="action-help"></div>
+        <div class="actions">
+        <button class="action"  href="#" type="submit">Cadastrar Despesas</button>
+              </div>
+            </div>
+          </div>
+          <div class="login-decoration">
+            
+          </div>
+        </div>
+      </div>
+</div>
+</form>
+
+{% endblock%}
